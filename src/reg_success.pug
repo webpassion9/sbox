@@ -1,0 +1,51 @@
+include html/mixins
+
+doctype html
+block head
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet")
+
+		link(rel="stylesheet", href="css/style.min.css")
+
+		title Title
+
+	body
+		.wrapper
+
+			include html/header
+		
+			main.main
+
+				.container.auth-container
+
+					.auth__main
+						.heading.heading--size-medium.heading--auth Registration
+						form.form-auth
+							.form-fields-wrapper
+								.field-item
+									.input-heading Your Email
+									.input-wrapper
+										input(type="email").input-base
+								.field-item
+									.input-heading Your mobile phone
+									.input-wrapper
+										input(type="tel").input-base#input-phone
+							.box-note.box-note--success.box-note--page-reg
+								span.font-weight-600 Account successfully registered.
+								br
+								| To continue check your email and follow the instructions
+
+					.auth__img.is-md-visible
+						img(src="img/auth-img@2x.jpg", width="640" height="654" alt="").is-lg-visible
+						img(src="img/auth-img_tablet@2x.jpg", width="1037" height="330" alt="").is-lg-hidden
+						
+
+
+		script(src="js/app.min.js")

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>gtlk</title>
+		<style>
+			.page-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 30px;
+			}
+			.page-list__section {
+				padding: 25px 20px 20px;
+				border: 1px solid #ccc;
+				position: relative;
+			}
+			.page-list__section-heading {
+				position: absolute;
+				left: 10px;
+				bottom: calc(100% - 8px);
+				background: #fff;
+				padding: 0 10px;
+				font-weight: 700;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body style="font-family: arial; margin: 0; padding: 30px;">
+		<h1 style="margin: 0 0 40px; padding: 0;">Page list:</h1>
+		<div class="page-list">
+			<div class="page-list__section">
+				<div class="page-list__section-heading">Reg</div>
+				<ul class="page-list" style="list-style: numeric; display: inline-block; list-style-position: inside; margin: 0; padding: 0;">
+					<li style="margin-bottom: 20px;">
+						<a href="reg.html" style="color: black; text-decoration: none;">reg.html</a>
+					</li>
+					<li style="margin-bottom: 20px;">
+						<a href="reg_sms.html" style="color: black; text-decoration: none;">reg_sms.html</a>
+					</li>
+					<li style="margin-bottom: 20px;">
+						<a href="reg_success.html" style="color: black; text-decoration: none;">reg_success.html</a>
+					</li>
+					<li style="margin-bottom: 20px;">
+						<a href="reg_complete.html" style="color: black; text-decoration: none;">reg_complete.html</a>
+					</li>
+					<li style="margin-bottom: 20px;">
+						<a href="profile-details.html" style="color: black; text-decoration: none;">profile-details.html</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-list__section">
+				<div class="page-list__section-heading">ui</div>
+				<ul class="page-list" style="list-style: numeric; display: inline-block; list-style-position: inside; margin: 0; padding: 0;">
+					<li style="margin-bottom: 20px;">
+						<a href="ui.html" style="color: black; text-decoration: none;">ui.html</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

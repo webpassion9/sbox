@@ -1,0 +1,24 @@
+// fonts
+$fontBase: 'Inter Tight', Arial, sans-serif;
+
+// colors
+:root {
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+	--color-dark: #2D333F;
+	--color-main-red: #EF424C;
+	--color-light-gray: #F7F7FA;
+	--color-light-gray-sec: #E6EAF2;
+	--color-gray: #9BA2AF;
+	--color-base-blue: #005CB2;
+}
+
+// breakpoints
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$hd: 1600px;
+

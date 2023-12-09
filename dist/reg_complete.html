@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&amp;display=swap&_v=20231209193338" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.min.css?_v=20231209193338">
+		<title>Title</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Header :: Start-->
+			<header class="header">
+				<div class="container header__main">
+					<div class="logo">
+						<img class="logo__img" src="img/logo.svg" width="111" height="24" alt="SBOX">
+						<div class="logo__title">Powered by SAFEDATA.dev</div>
+					</div>
+					<div class="header__auth-btns">
+						<a class="btn btn-base btn-base--theme-light-gray btn-base--size-normal" href="#">Sign In</a>
+						<a class="btn btn-base btn-base--theme-red btn-base--size-normal" href="#">Sign Up</a>
+					</div>
+				</div>
+			</header>
+			<!-- Header :: End-->
+			<main class="main">
+				<div class="container reg-complete">
+					<div class="reg-complete__col">
+						<div class="heading heading--size-medium heading--complete-reg">Complete registration</div>
+						<div class="box-note box-note--base">All the following fields are necessary for registration.
+							<br>Fill them in and press “Done” button.
+						</div>
+					</div>
+					<div class="reg-complete__main">
+						<form class="form-auth">
+							<div class="form-fields-wrapper">
+								<div class="field-item">
+									<div class="input-heading">Your Email</div>
+									<div class="input-wrapper">
+										<input class="input-base" type="email">
+									</div>
+								</div>
+								<div class="field-item">
+									<div class="input-heading">Your mobile phone</div>
+									<div class="input-wrapper">
+										<input class="input-base" type="tel" id="input-phone">
+									</div>
+								</div>
+								<div class="field-item">
+									<div class="input-heading">Father`s name</div>
+									<div class="input-wrapper">
+										<input class="input-base" type="text">
+									</div>
+								</div>
+								<div class="field-item">
+									<div class="input-heading">Occupation</div>
+									<div class="input-wrapper">
+										<select class="custom-select">
+											<option value="Student">Student</option>
+											<option value="Student 2">Student 2</option>
+											<option value="Student 3">Student 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="field-item">
+									<div class="input-heading">Nationality</div>
+									<div class="input-wrapper">
+										<select class="custom-select">
+											<option value="Student">Greece</option>
+											<option value="Student 2">Greece 2</option>
+											<option value="Student 3">Greece 3</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-auth__submit form-auth__submit--complete-reg">
+								<button class="btn btn-base btn-base--theme-red btn-base--size-normal btn-base--auth" type="submit">
+									<svg class="icon-arrow-right">
+										<use xlink:href="img/icons/icons.svg#icon-arrow-right"></use>
+									</svg>Done
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="js/app.min.js?_v=20231209193338"></script>
+	</body>
+</html>

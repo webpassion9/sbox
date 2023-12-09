@@ -1,0 +1,78 @@
+.btn {
+	cursor: pointer;
+	text-decoration: none;
+	background: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: all .25s;
+	max-width: 100%;
+	outline: none;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		transition: none;
+	}
+
+	&-base {
+		gap: 4px;
+		max-width: 100%;
+
+		&--size-normal {
+			height: 40px;
+			padding: 5px 15px;
+			border-radius: 4px;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+
+		&--theme-light-gray {
+			background: var(--color-light-gray-sec);
+			color: var(--color-dark);
+			&:hover {
+				background: #e1e4ec;
+			}
+		}
+		&--theme-red {
+			background: var(--color-main-red);
+			color: var(--color-white);	
+			&:hover {
+				background: #d13740;
+			}
+		}
+		&--theme-black {
+			background: var(--color-dark);
+			color: var(--color-white);	
+			&:hover {
+				background: #20242c;
+			}
+		}
+		
+		&--auth {
+			min-width: 200px;
+		}
+		&--account {
+			width: 150px;
+			max-width: 100%;
+		}
+
+		.icon-arrow-right {
+			width: 16px;
+			height: 16px;
+		}
+
+
+
+	}
+
+
+
+	&--fullwidth {
+		width: 100%;
+	}
+
+	
+}

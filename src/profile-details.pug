@@ -1,0 +1,133 @@
+include html/mixins
+
+doctype html
+block head
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet")
+
+		link(rel="stylesheet", href="css/style.min.css")
+
+		title Title
+
+	body
+		.wrapper
+
+			include html/header-profile
+		
+			main.main
+
+				.account-top.account-section
+					.container.container-account
+						.heading.heading--size-normal.heading--profile Account
+						.row.form-fields-wrapper
+							.col-sm-6
+								.field-item.field-item--padding-none
+									.input-heading Email
+									.row
+										.col-7.col-lg-6
+											.input-wrapper
+												input(type="text" value="tsangalidis@gmail.com" disabled).input-base
+										.col-5.col-lg-6
+											a(href="#").btn.btn-base.btn-base--account.btn-base--theme-black.btn-base--size-normal Change
+							.col-sm-6
+								.field-item.field-item--padding-none
+									.input-heading Phone
+									.row
+										.col-7.col-lg-6
+											.input-wrapper
+												input(type="text" value="+30 6951002737" disabled).input-base
+										.col-5.col-lg-6
+											a(href="#").btn.btn-base.btn-base--account.btn-base--theme-black.btn-base--size-normal Change
+				
+				.container.container-account
+					.account-section
+						.heading.heading--size-normal.heading--profile Information
+						.row.form-fields-wrapper.form-account-row
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading First name
+									.input-wrapper
+										input(type="text").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Last name
+									.input-wrapper
+										input(type="text").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Father`s name
+									.input-wrapper
+										input(type="text").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Date of birth
+									.input-wrapper
+										input(type="text").input-base.input-datepicker
+										.input-icon
+											+sprite("icon-calendar")
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Occupation
+									.input-wrapper
+										select.custom-select
+											option(value="Student") Student
+											option(value="Student 2") Student 2
+											option(value="Student 3") Student 3
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Nationality
+									.input-wrapper
+										select.custom-select
+											option(value="Student") Greece
+											option(value="Student 2") Greece long text long text long text 2
+											option(value="Student 3") Greece 3
+						.row.form-fields-wrapper
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Reg postal code
+									.input-wrapper
+										input(type="text").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Reg city
+									.input-wrapper
+										input(type="text").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Reg street
+									.input-wrapper
+										input(type="text").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Reg address number
+									.input-wrapper
+										input(type="text").input-base
+
+					.account-section
+						.heading.heading--size-normal.heading--profile Change password
+						.row.form-fields-wrapper
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading Password
+									.input-wrapper
+										input(type="password").input-base
+							.col-auto.col-form-acc
+								.field-item
+									.input-heading New password
+									.input-wrapper
+										input(type="password").input-base
+									.field-note Password must be a 6-digit number
+							.col-auto.col-form-acc.col-align-right.account-save
+								button(type="submit").btn.btn-base.btn-base--theme-red.btn-base--size-normal.btn-base--auth
+									| Save
+
+
+
+		script(src="js/app.min.js")
