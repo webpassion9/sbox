@@ -1,0 +1,50 @@
+include html/mixins
+
+doctype html
+block head
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+
+		link(rel="stylesheet", href="css/style.min.css")
+
+		title Title
+
+	body
+		.wrapper.wrapper-main
+
+				main.main
+					.content-inner
+						div(style="display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding: 15px;")
+							.heading.heading--size-normal Heading normal
+							.heading.heading--size-medium Heading medium
+							.input-wrapper
+								input(type="email").input-base
+							.input-wrapper
+								input(type="text").input-base.input-datepicker
+								.input-icon
+									+sprite("icon-calendar")
+							.input-wrapper
+								input(type="tel").input-base#input-phone
+							label.checkbox
+								input(type="checkbox" hidden)
+								span.checkbox__icon
+									+sprite("icon-check")
+								span.checkbox__text Checkbox
+							a(href="#").btn.btn-base.btn-base--theme-black.btn-base--size-normal
+								| Test
+							a(href="#").btn.btn-base.btn-base--theme-red.btn-base--size-normal
+								| Test
+							.box-note.box-note--success
+								span.font-weight-600 Account successfully registered.
+								br
+								| To continue check your email and follow the instructions
+							.box-note.box-note--base
+								| All the following fields are necessary for registration.
+								br
+								| Fill them in and press “Done” button.
+
+
+		script(src="js/app.min.js")

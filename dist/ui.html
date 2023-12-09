@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="css/style.min.css?_v=20231209195759">
+		<title>Title</title>
+	</head>
+	<body>
+		<div class="wrapper wrapper-main">
+			<main class="main">
+				<div class="content-inner">
+					<div style="display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding: 15px;">
+						<div class="heading heading--size-normal">Heading normal</div>
+						<div class="heading heading--size-medium">Heading medium</div>
+						<div class="input-wrapper">
+							<input class="input-base" type="email">
+						</div>
+						<div class="input-wrapper">
+							<input class="input-base input-datepicker" type="text">
+							<div class="input-icon">
+								<svg class="icon-calendar">
+									<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="input-wrapper">
+							<input class="input-base" type="tel" id="input-phone">
+						</div>
+						<label class="checkbox">
+							<input type="checkbox" hidden>
+							<span class="checkbox__icon">
+								<svg class="icon-check">
+									<use xlink:href="img/icons/icons.svg#icon-check"></use>
+								</svg>
+							</span>
+							<span class="checkbox__text">Checkbox</span>
+						</label>
+						<a class="btn btn-base btn-base--theme-black btn-base--size-normal" href="#">Test</a>
+						<a class="btn btn-base btn-base--theme-red btn-base--size-normal" href="#">Test</a>
+						<div class="box-note box-note--success">
+							<span class="font-weight-600">Account successfully registered.</span>
+							<br>To continue check your email and follow the instructions
+						</div>
+						<div class="box-note box-note--base">All the following fields are necessary for registration.
+							<br>Fill them in and press “Done” button.
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script src="js/app.min.js?_v=20231209195759"></script>
+	</body>
+</html>
