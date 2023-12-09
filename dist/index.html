@@ -6,15 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>gtlk</title>
 		<style>
+			body {
+				background: rgba(0,0,0,.016);
+			}
 			.page-list {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 30px;
 			}
+			.page-list>li:not(:last-child) {
+				margin-bottom: 20px;
+			}
 			.page-list__section {
 				padding: 25px 20px 20px;
-				background: rgba(0,0,0,.03);
-				border: 1px solid #ccc;
+				background: rgba(255,255,255,1);
+				border: 1px solid #d9d9d9;
 				position: relative;
 				width: 100%;
 			}
@@ -25,26 +31,26 @@
 		<div class="page-list">
 			<div class="page-list__section">
 				<ul class="page-list" style="list-style: numeric; display: inline-block; list-style-position: inside; margin: 0; padding: 0;">
-					<li style="margin-bottom: 20px;">
+					<li>
 						<a href="reg.html" style="color: black; text-decoration: none;">reg.html</a>
 					</li>
-					<li style="margin-bottom: 20px;">
+					<li>
 						<a href="reg_sms.html" style="color: black; text-decoration: none;">reg_sms.html</a>
 					</li>
-					<li style="margin-bottom: 20px;">
+					<li>
 						<a href="reg_success.html" style="color: black; text-decoration: none;">reg_success.html</a>
 					</li>
-					<li style="margin-bottom: 20px;">
+					<li>
 						<a href="reg_complete.html" style="color: black; text-decoration: none;">reg_complete.html</a>
 					</li>
-					<li style="margin-bottom: 20px;">
+					<li>
 						<a href="profile-details.html" style="color: black; text-decoration: none;">profile-details.html</a>
 					</li>
 				</ul>
 			</div>
 			<div class="page-list__section">
 				<ul class="page-list" style="list-style: numeric; display: inline-block; list-style-position: inside; margin: 0; padding: 0;">
-					<li style="margin-bottom: 20px;">
+					<li>
 						<a href="ui.html" style="color: black; text-decoration: none;">ui.html</a>
 					</li>
 				</ul>
