@@ -6,8 +6,8 @@
 		<meta name="format-detection" content="telephone=no">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&amp;display=swap&_v=20231209203550" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.min.css?_v=20231209203550">
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&amp;display=swap&_v=20231215181720" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.min.css?_v=20231215181720">
 		<title>Title</title>
 	</head>
 	<body>
@@ -21,17 +21,56 @@
 					</div>
 					<div class="account-bar">
 						<div class="notifications">
-							<a class="btn notifications__btn" href="#">
+							<a class="btn notifications__btn" href="#" data-popup-target="popup-notifications">
 								<svg class="icon-bell">
 									<use xlink:href="img/icons/icons.svg#icon-bell"></use>
 								</svg>
 								<span class="notifications__btn-indicator"></span>
 							</a>
+							<div class="notifications__popup" data-popup="popup-notifications">
+								<ul class="notifications__list">
+									<li class="notifications__list-item">
+										<div class="notifications__list-item-date">14.12.23  10:05</div>
+										<div class="notifications__list-item-text">You need to 
+											<a href="#">upload the documents </a>for further registration
+										</div>
+										<div class="notifications__list-item-indicator"></div>
+									</li>
+									<li class="notifications__list-item">
+										<div class="notifications__list-item-date">14.12.23  10:05</div>
+										<div class="notifications__list-item-text">You need to 
+											<a href="#">upload the documents </a>for further registration
+										</div>
+										<div class="notifications__list-item-indicator"></div>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<div class="user-nav">
-							<a class="user-nav__ava" href="#">
-								<picture><source srcset="img/user.webp" type="image/webp"><img src="img/user.jpg" alt=""></picture>
+							<a class="user-nav__ava" data-popup-target="popup-user-menu">
+								<svg class="icon-user">
+									<use xlink:href="img/icons/icons.svg#icon-user"></use>
+								</svg>
+								<div class="user-nav__ava-img">
+									<picture><source srcset="img/user.webp" type="image/webp"><img src="img/user.jpg" alt=""></picture>
+								</div>
 							</a>
+							<ul class="user-nav__menu" data-popup="popup-user-menu">
+								<li class="user-nav__menu-item">
+									<a class="user-nav__menu-item-link" href="#">
+										<svg class="icon-settings">
+											<use xlink:href="img/icons/icons.svg#icon-settings"></use>
+										</svg>Settings
+									</a>
+								</li>
+								<li class="user-nav__menu-item">
+									<a class="user-nav__menu-item-link" href="#">
+										<svg class="icon-logout">
+											<use xlink:href="img/icons/icons.svg#icon-logout"></use>
+										</svg>Log out
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -204,6 +243,46 @@
 				</div>
 			</main>
 		</div>
-		<script src="js/app.min.js?_v=20231209203550"></script>
+		<div class="modal-container" id="modal-data-saved">
+			<div class="modal">
+				<div class="modal__icon">
+					<svg class="icon-check-circle">
+						<use xlink:href="img/icons/icons.svg#icon-check-circle"></use>
+					</svg>
+				</div>
+				<div class="modal-data-text"> 
+					<p>Your data has been successfully saved</p>
+				</div>
+				<div class="modal__close-btn" data-modal-close>
+					<svg class="icon-close">
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="modal-container" id="modal-data-rejected">
+			<div class="modal">
+				<div class="modal__icon">
+					<svg class="icon-cross-circle">
+						<use xlink:href="img/icons/icons.svg#icon-cross-circle"></use>
+					</svg>
+				</div>
+				<div class="modal-data-text">
+					<p> 
+						<span class="color-red">Your data has been rejected.</span>
+						<br>Contact customer support
+					</p>
+					<p>
+						<a href="mailto:support@sbox.com">support@sbox.com</a>
+					</p>
+				</div>
+				<div class="modal__close-btn" data-modal-close>
+					<svg class="icon-close">
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<script src="js/app.min.js?_v=20231215181720"></script>
 	</body>
 </html>

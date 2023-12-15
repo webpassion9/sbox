@@ -6,11 +6,36 @@ header.header.header--profile
 			.logo__title Powered by SAFEDATA.dev
 		.account-bar
 			.notifications
-				a(href="#").btn.notifications__btn
+				a(href="#" data-popup-target="popup-notifications").btn.notifications__btn
 					+sprite("icon-bell")
 					span.notifications__btn-indicator
+				.notifications__popup(data-popup="popup-notifications")
+					ul.notifications__list
+						li.notifications__list-item
+							.notifications__list-item-date 14.12.23  10:05
+							.notifications__list-item-text You need to 
+								a(href="#") upload the documents 
+								| for further registration
+							.notifications__list-item-indicator
+						li.notifications__list-item
+							.notifications__list-item-date 14.12.23  10:05
+							.notifications__list-item-text You need to 
+								a(href="#") upload the documents 
+								| for further registration
+							.notifications__list-item-indicator
 			.user-nav
-				a(href="#").user-nav__ava
-					img(src="img/user.jpg", alt="")
+				a(data-popup-target="popup-user-menu").user-nav__ava
+					+sprite("icon-user")
+					.user-nav__ava-img
+						img(src="img/user.jpg", alt="")
+				ul.user-nav__menu(data-popup="popup-user-menu")
+					li.user-nav__menu-item
+						a(href="#").user-nav__menu-item-link
+							+sprite("icon-settings")
+							| Settings
+					li.user-nav__menu-item
+						a(href="#").user-nav__menu-item-link
+							+sprite("icon-logout")
+							| Log out
 		
 // Header :: End

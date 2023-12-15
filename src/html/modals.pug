@@ -1,0 +1,22 @@
+.modal-container#modal-data-saved
+	.modal
+		.modal__icon
+			+sprite("icon-check-circle")
+		.modal-data-text 
+			p Your data has been successfully saved
+		.modal__close-btn(data-modal-close)
+			+sprite("icon-close")
+	
+.modal-container#modal-data-rejected
+	.modal
+		.modal__icon
+			+sprite("icon-cross-circle")
+		.modal-data-text
+			p 
+				span.color-red Your data has been rejected.
+				br
+				| Contact customer support
+			p
+				a(href="mailto:support@sbox.com") support@sbox.com
+		.modal__close-btn(data-modal-close)
+			+sprite("icon-close")

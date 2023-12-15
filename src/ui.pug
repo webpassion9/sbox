@@ -26,8 +26,13 @@ html(lang="en")
 								input(type="text").input-base.input-datepicker
 								.input-icon
 									+sprite("icon-calendar")
-							.input-wrapper
-								input(type="tel").input-base#input-phone
+							div
+								.input-wrapper
+									input(type="tel").input-base#input-phone
+							div
+								.input-wrapper
+									input(type="text").input-base.is-error
+								.input-error the email address is entered incorrectly
 							label.checkbox
 								input(type="checkbox" hidden)
 								span.checkbox__icon
@@ -45,6 +50,37 @@ html(lang="en")
 								| All the following fields are necessary for registration.
 								br
 								| Fill them in and press “Done” button.
-
+							
+							.user-nav
+								a(data-popup-target="popup-user-menu").user-nav__ava
+									+sprite("icon-user")
+								ul.user-nav__menu(data-popup="popup-user-menu")
+									li.user-nav__menu-item
+										a(href="#").user-nav__menu-item-link
+											+sprite("icon-settings")
+											| Settings
+									li.user-nav__menu-item
+										a(href="#").user-nav__menu-item-link
+											+sprite("icon-logout")
+											| Log out
+							.user-nav
+								a(data-popup-target="popup-user-menu").user-nav__ava
+									+sprite("icon-user")
+									.user-nav__ava-img
+										img(src="img/user.jpg", alt="")
+								ul.user-nav__menu(data-popup="popup-user-menu")
+									li.user-nav__menu-item
+										a(href="#").user-nav__menu-item-link
+											+sprite("icon-settings")
+											| Settings
+									li.user-nav__menu-item
+										a(href="#").user-nav__menu-item-link
+											+sprite("icon-logout")
+											| Log out
+							div
+								strong Modals:
+							a(href="#modal-data-saved" data-modal-btn) Your data has been successfully saved
+							a(href="#modal-data-rejected" data-modal-btn) Your data has been rejected.
+		include html/modals
 
 		script(src="js/app.min.js")
