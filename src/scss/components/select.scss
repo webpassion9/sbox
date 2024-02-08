@@ -38,6 +38,8 @@
 		border: 1px solid #DFE3EB;
 		border-radius: 4px;
 		display: none;
+		max-height: 215px;
+		overflow: auto;
 		&>li {
 			padding: 5px 10px;
 			font-size: 14px;
